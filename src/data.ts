@@ -208,8 +208,8 @@ export const CATALOGUE_PDFS: CataloguePDF[] = [
     title: "Parts Catalogue - Volume 1",
     subtitle: "Commercial Vehicle Parts & Assemblies",
     description: "Comprehensive listing of OE replacement parts, electrical units, fasteners, and standard hardware.",
-    driveUrl: "https://drive.google.com/file/d/1WIKS1PzZvSD516v0F-gXoanjqnRVLdMo/view?usp=sharing",
-    embedUrl: "https://drive.google.com/file/d/1WIKS1PzZvSD516v0F-gXoanjqnRVLdMo/preview",
+    driveUrl: "https://drive.google.com/file/d/16K9oVpddP2FPQsPsnDBwmSlcDr7JY1Ht/view?usp=sharing",
+    embedUrl: "https://drive.google.com/file/d/16K9oVpddP2FPQsPsnDBwmSlcDr7JY1Ht/preview",
     badge: "Volume 01"
   },
   {
@@ -218,8 +218,8 @@ export const CATALOGUE_PDFS: CataloguePDF[] = [
     title: "Parts Catalogue - Volume 2",
     subtitle: "Heavy Duty Suspension & Mechanical Systems",
     description: "Specifications for brake systems, air bellows, booster fittings, hub assemblies, and bearings.",
-    driveUrl: "https://drive.google.com/file/d/1u-HuUif5fMVgOwxOQTYZmCemq7vos3Ha/view?usp=sharing",
-    embedUrl: "https://drive.google.com/file/d/1u-HuUif5fMVgOwxOQTYZmCemq7vos3Ha/preview",
+    driveUrl: "https://drive.google.com/file/d/1cLGhhVIpIXWt0WCTQqmEcjZE-k5fcDV-/view?usp=sharing",
+    embedUrl: "https://drive.google.com/file/d/1cLGhhVIpIXWt0WCTQqmEcjZE-k5fcDV-/preview",
     badge: "Volume 02"
   }
 ];
