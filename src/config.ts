@@ -5,7 +5,7 @@
 
 export const COMPANY_INFO = {
   name: "MOHAMMED AMIN AUTOMOTIVE PARTS SHOP L.L.C.",
-  shortName: "MAAPS",
+  shortName: "MAPS",
   trn: "100223789000003",
   address: "Musaffah - M/5, Building No - 64, Al Mazj Street 1, Abu Dhabi - U.A.E.",
   pobox: "P.O. Box: 91199",
