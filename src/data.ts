@@ -230,7 +230,7 @@ export const CATALOGUE_VOL_3: CataloguePDF = {
   title: "Parts Catalogue - Volume 3",
   subtitle: "Engine Filtration, Fluids & Maintenance",
   description: "Detailed catalog of oil/fuel/air filtration, lubricants, workshop tools, and safety accessories.",
-  driveUrl: "https://drive.google.com/file/d/1W_YSPM9yMTCTAtnUd_HnydEpIGXFd7f3/view?usp=sharing",
-  embedUrl: "https://drive.google.com/file/d/1W_YSPM9yMTCTAtnUd_HnydEpIGXFd7f3/preview",
+  driveUrl: "https://drive.google.com/file/d/10AigtcSNTyTf9WlbK6gPFtAyc00O8cld/view?usp=sharing",
+  embedUrl: "https://drive.google.com/file/d/10AigtcSNTyTf9WlbK6gPFtAyc00O8cld/preview",
   badge: "Volume 03"
 };
