@@ -1,0 +1,6 @@
+{
+  "name": "Mohd. Amin Auto Parts",
+  "description": "Automotive Spare Parts View-Only Catalog & OE Part Search",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
