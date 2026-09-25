@@ -195,7 +195,7 @@ export default function Navbar({ currentHash }: NavbarProps) {
                 </div>
                 <div className="flex flex-col items-stretch gap-1 mt-0.5 sm:mt-1 shrink-0">
                   <span className="text-[10px] sm:text-xs font-black text-red-600 bg-red-50 border-2 border-amber-300 px-2 py-0.5 rounded-md tracking-wider whitespace-nowrap shadow-2xs text-center flex items-center justify-center leading-none">
-                    EST. 1993
+                    EST. 1992
                   </span>
                   <UaeFlag
                     className="w-full h-3.5 sm:h-4 rounded-xs border border-amber-300/80 shadow-2xs"
