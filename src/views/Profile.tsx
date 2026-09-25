@@ -1,6 +1,7 @@
 import { COMPANY_INFO, CONTACT_CONFIG, getPhoneUrl, getWhatsAppUrl, getEmailUrl } from '../config';
 import { Phone, Mail, FileText, CheckCircle2, MessageSquare, Smartphone, Building2, Warehouse, User, PhoneCall, MapPin } from 'lucide-react';
 import { WhatsAppIcon } from '../components/WhatsAppIcon';
+import { UaeFlag, UaeFlagLogo } from '../components/UaeFlag';
 
 export default function Profile() {
   const brands = [
@@ -85,8 +86,9 @@ export default function Profile() {
                 />
               </div>
             </div>
-            <div className="absolute right-8 top-8">
-               <span className="bg-white text-blue-900 font-black px-4 py-1.5 rounded-full text-sm border-2 border-amber-300 shadow-sm">Verified Supplier</span>
+            <div className="absolute right-8 top-8 flex items-center gap-2.5">
+               <UaeFlagLogo variant="pill" />
+               <span className="hidden sm:inline-block bg-white text-blue-900 font-black px-4 py-1.5 rounded-full text-sm border-2 border-amber-300 shadow-sm">Verified Supplier</span>
             </div>
           </div>
           
@@ -100,6 +102,10 @@ export default function Profile() {
                   </span>
                   <span className="flex items-center gap-1.5 font-semibold text-slate-700">
                     <MapPin className="w-4 h-4 text-blue-900" /> <span>{COMPANY_INFO.address}</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 font-bold bg-emerald-50 text-emerald-900 border border-emerald-300 px-2.5 py-0.5 rounded-md text-xs shadow-2xs">
+                    <UaeFlag className="w-4 h-2 rounded-[2px]" border={false} shadow={false} />
+                    <span>United Arab Emirates • Abu Dhabi</span>
                   </span>
                 </div>
                 <div className="flex flex-wrap gap-2">

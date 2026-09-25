@@ -1,5 +1,6 @@
 import { COMPANY_INFO } from '../data';
 import { Target, Award, Clock, MapPin } from 'lucide-react';
+import { UaeFlag } from '../components/UaeFlag';
 
 export default function About() {
   return (
@@ -40,6 +41,7 @@ export default function About() {
           </div>
           <div>
             <div className="inline-flex items-center gap-2 bg-red-50 border-2 border-amber-300 text-red-700 px-3.5 py-1.5 rounded-full text-xs font-black mb-6 uppercase tracking-wider shadow-2xs">
+              <UaeFlag className="w-4 h-2 rounded-[2px]" border={false} shadow={false} />
               <Award className="w-4 h-4 text-red-600" />
               EST. 1992 • UAE Pioneer
             </div>
