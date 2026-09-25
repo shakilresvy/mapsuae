@@ -2,6 +2,7 @@ import { Menu, X, Search, Sparkles, ExternalLink, ArrowRight, Phone } from 'luci
 import { useState, useEffect, useRef, useMemo, FormEvent } from 'react';
 import { getSearchableInventory, getAllQuickHeadlines, PartRecord } from '../data';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import { UaeFlag } from './UaeFlag';
 
 interface NavbarProps {
   currentHash: string;
@@ -192,9 +193,17 @@ export default function Navbar({ currentHash }: NavbarProps) {
                     <span>L.L.C.</span>
                   </div>
                 </div>
-                <span className="text-[10px] sm:text-xs font-black text-red-600 bg-red-50 border-2 border-amber-300 px-2 py-0.5 rounded-md tracking-wider mt-0.5 whitespace-nowrap shadow-2xs">
-                  EST. 1992
-                </span>
+                <div className="flex flex-col items-stretch gap-1 mt-0.5 shrink-0">
+                  <span className="text-[10px] sm:text-xs font-black text-red-600 bg-red-50 border-2 border-amber-300 px-2 py-0.5 rounded-md tracking-wider whitespace-nowrap shadow-2xs text-center flex items-center justify-center leading-tight">
+                    EST. 1992
+                  </span>
+                  <UaeFlag
+                    className="w-full h-3 sm:h-3.5 rounded-xs border border-amber-300/80 shadow-2xs"
+                    border={false}
+                    shadow={false}
+                    aspectRatio="none"
+                  />
+                </div>
               </div>
             </a>
           </div>

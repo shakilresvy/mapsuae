@@ -7,6 +7,7 @@ interface UaeFlagProps {
   rounded?: boolean | string;
   border?: boolean;
   shadow?: boolean;
+  aspectRatio?: string;
 }
 
 /**
@@ -21,16 +22,26 @@ export function UaeFlag({
   height,
   rounded = true,
   border = true,
-  shadow = true
+  shadow = true,
+  aspectRatio
 }: UaeFlagProps) {
   const roundedClass = typeof rounded === 'string' ? rounded : rounded ? 'rounded-xs' : '';
   const borderClass = border ? 'border border-amber-300/60' : '';
   const shadowClass = shadow ? 'shadow-2xs' : '';
 
+  const styleObj: React.CSSProperties = { width, height };
+  if (aspectRatio !== undefined) {
+    if (aspectRatio !== 'none') {
+      styleObj.aspectRatio = aspectRatio;
+    }
+  } else if (!height) {
+    styleObj.aspectRatio = '2 / 1';
+  }
+
   return (
     <div 
       className={`inline-block overflow-hidden shrink-0 ${roundedClass} ${borderClass} ${shadowClass} ${className}`}
-      style={{ width, height, aspectRatio: '2 / 1' }}
+      style={styleObj}
       title="Flag of the United Arab Emirates (علم دولة الإمارات العربية المتحدة)"
       role="img"
       aria-label="Flag of the United Arab Emirates"
@@ -38,6 +49,7 @@ export function UaeFlag({
       <svg
         viewBox="0 0 1200 600"
         className="w-full h-full block"
+        preserveAspectRatio={aspectRatio === 'none' ? 'none' : undefined}
         xmlns="http://www.w3.org/2000/svg"
       >
         {/* Horizontal stripes (3/4 of the width) */}

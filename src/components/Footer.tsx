@@ -1,6 +1,5 @@
 import { COMPANY_INFO, CONTACT_CONFIG, getEmailUrl } from '../config';
 import { Mail, MapPin, ArrowRight, ShieldCheck, Clock } from 'lucide-react';
-import { UaeFlag } from './UaeFlag';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -127,11 +126,6 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>&copy; {new Date().getFullYear()} {COMPANY_INFO.shortName}. All rights reserved.</p>
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 text-slate-600">
-            <div className="flex items-center gap-1.5 bg-slate-50 border border-slate-200 px-2 py-1 rounded-md shadow-2xs">
-              <UaeFlag className="w-4 h-2 rounded-[2px]" border={false} shadow={false} />
-              <span className="font-bold text-slate-800">Abu Dhabi, UAE</span>
-            </div>
-            <span>•</span>
             <span>Musaffah M-5</span>
             <span>•</span>
             <span className="text-blue-900 font-extrabold">Dedicatedly Operating in the UAE 🇦🇪</span>
